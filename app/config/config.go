@@ -49,14 +49,14 @@ func Load() error {
 	return nil
 }
 
-func Config() *config {
+func GetConfig() *config {
 	return configInstance
 }
 
-func DB() *DBConfig {
+func GetDB() *DBConfig {
 	return &configInstance.Database
 }
 
-func API() *APIConfig {
+func GetAPI() *APIConfig {
 	return &configInstance.API
 }
